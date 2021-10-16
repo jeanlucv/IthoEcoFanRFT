@@ -13,7 +13,7 @@ Complete rework of the itho packet section, cleanup and easier to understand, im
 *  Move SYNC word from 171,170 further down the message to 179,42,163,42 to filter out more non-itho messages in CC1101 hardware
 *  Support for RFT-CO2 and RFT-RV devices (monitor values and commands)
 
-   Tested on ESP8266 & ESP32
+   Tested on ESP8266 & ESP32, compiles on Arduino Uno but might be memory heavy
 ```
 
 Will work with a 868MHz CC1101 module.
