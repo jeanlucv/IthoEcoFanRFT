@@ -11,6 +11,7 @@ Complete rework of the itho packet section, cleanup and easier to understand, im
 *  Added ICACHE_RAM_ATTR to 'void ITHOcheck()' for ESP8266/ESP32 compatibility
 *  Trigger on the falling edge and simplified ISR routine for more robust packet handling
 *  Move SYNC word from 171,170 further down the message to 179,42,163,42 to filter out more non-itho messages in CC1101 hardware
+*  Support for RFT-CO2 and RFT-RV devices (monitor values and commands)
 
    Tested on ESP8266 & ESP32
 ```
