@@ -876,16 +876,16 @@ bool IthoCC1101::checkID(const uint8_t *id)
 
 String IthoCC1101::getLastIDstr(bool ashex) {
   String str;
-  for (uint8_t i = 0; i < 3; i++) {
-    //if (ashex) str += String(inIthoPacket.deviceId[i], HEX);
-    //else str += String(inIthoPacket.deviceId[i]);
-    //if (i < 2) str += ",";
-    str += String(inIthoPacket.deviceId0, HEX);
-    str += ",";
-    str += String(inIthoPacket.deviceId1, HEX);
-    str += ",";
-    str += String(inIthoPacket.deviceId2, HEX);
-  }
+  // for (uint8_t i = 0; i < 3; i++) {
+  //   if (ashex) str += String(inIthoPacket.deviceId[i], HEX);
+  //   else str += String(inIthoPacket.deviceId[i]);
+  //   if (i < 2) str += ",";
+  // }
+  str += String(inIthoPacket.deviceId0, HEX);
+  str += ",";
+  str += String(inIthoPacket.deviceId1, HEX);
+  str += ",";
+  str += String(inIthoPacket.deviceId2, HEX);
   return str;
 }
 
